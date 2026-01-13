@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+body{
+    background-color: #07172a;
+    height: 200vh
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    width: 100%;
+    /* Efecto Sticky y Blur */
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav_links{
+    display:flex;
+    list-style:none;
+    gap: 30px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.nav-links a:hover {
+    color: #38bdf8; /* Color azul brillante al pasar el mouse */
+}
+.logo h1 {
+    color:white;
+    font-size: 1.5rem;
+}
+.logo span{
+    color: #38bdf8;
+}
+
+.btn-login {
+    background-color: #38bdf8;
+    color: #0f172a;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn-login:hover {
+    background-color: white;
+    transform: scale(1.05); /* Se hace un poquito más grande */
+}
